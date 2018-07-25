@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.circleprogressbar.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"/>
+
+    <circleprogressbar.CircleProgressBar
+        android:background="#A0A0"
+        android:id="@+id/progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:style="arc"
+        app:progress="0"
+        app:cacheProgress="0"
+        app:hasGravity="false"
+        app:progressBarWidth="5dp"
+        app:proressColor="#A00A"
+        app:progressBackgroundColor="#A00"
+        app:textSize="10sp"
+        app:text="loading..."
+        app:textColor="#A0A"/>
+</LinearLayout>
