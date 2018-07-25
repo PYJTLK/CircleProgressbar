@@ -295,12 +295,47 @@ public class CircleProgressBar extends android.support.v7.widget.AppCompatImageV
         return mCacheProgress;
     }
 
+    /**
+     * 设置进度条文本颜色
+     * @param textColor
+     */
     public void setTextColor(int textColor){
         mTextColor = textColor;
     }
 
+    /**
+     * 设置进度条文本大小
+     * @param textSize
+     */
     public void setTextSize(int textSize){
         mTextSize = textSize;
         mTextPaint.setTextSize(mTextSize);
+    }
+
+    /**
+     * 设置进度条颜色
+     * @param color
+     */
+    public void setProgressColor(int color){
+        mProgressColor = color;
+        invalidate();
+    }
+
+    /**
+     * 设置缓存条颜色
+     * @param color
+     */
+    public void setCacheProgressColor(int color){
+        mCacheColor = color;
+        invalidate();
+    }
+
+    /**
+     * 设置进度条背景颜色
+     * @param color
+     */
+    public void setProgressBackgroundColor(int color){
+        mProgressBackgroundColor = color;
+        invalidate();
     }
 }
